@@ -1,0 +1,296 @@
+.app {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  color: var(--snow-white);
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* Home Page Styles */
+.home-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.setup-section {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.name-form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.name-input {
+  flex: 1;
+}
+
+.add-button {
+  background: var(--christmas-green);
+  color: white;
+}
+
+.add-button:hover {
+  background: var(--christmas-green-dark);
+}
+
+.error-message {
+  color: var(--christmas-red);
+  font-size: 0.9em;
+  margin: 0.5rem 0;
+}
+
+.hint {
+  color: var(--text-light);
+  font-size: 0.9em;
+  margin-top: 1rem;
+}
+
+/* Names List */
+.names-list {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.names-list h2 {
+  color: var(--christmas-green);
+  border-bottom: 2px solid var(--christmas-green);
+  padding-bottom: 0.5rem;
+}
+
+.names-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.name-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.remove-button {
+  background: var(--christmas-red);
+  color: white;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 1.2em;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+.remove-button:hover {
+  background: var(--christmas-red-dark);
+}
+
+/* Generate Button */
+.generate-button {
+  width: 100%;
+  background: var(--christmas-red);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1em;
+  margin-top: 1.5rem;
+}
+
+.generate-button:hover:not(:disabled) {
+  background: var(--christmas-red-dark);
+  transform: translateY(-2px);
+}
+
+/* Assignments Section */
+.assignments-section {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.assignments-section h2 {
+  color: var(--christmas-green);
+  text-align: center;
+}
+
+.instructions {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.assignments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.assignment-card {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 1rem;
+  border-left: 4px solid var(--christmas-red);
+}
+
+.giver-name {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+  color: var(--christmas-red);
+}
+
+.link-section {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.url-input {
+  flex: 1;
+  font-size: 0.85em;
+  padding: 0.5rem;
+  background: white;
+}
+
+.copy-button {
+  background: var(--christmas-green);
+  color: white;
+  white-space: nowrap;
+}
+
+.copy-button:hover {
+  background: var(--christmas-green-dark);
+}
+
+.reset-button {
+  width: 100%;
+  background: #666;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.reset-button:hover {
+  background: #555;
+}
+
+/* Reveal Page Styles */
+.reveal-page {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reveal-page.error-page {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.reveal-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.reveal-card h2 {
+  color: var(--christmas-green);
+}
+
+.pre-reveal p {
+  color: var(--text-light);
+}
+
+.warning {
+  background: #fff3cd;
+  color: #856404;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.reveal-button {
+  background: var(--christmas-red);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2em;
+}
+
+.reveal-button:hover {
+  background: var(--christmas-red-dark);
+  transform: scale(1.05);
+}
+
+.post-reveal p {
+  color: var(--text-light);
+}
+
+.receiver-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--christmas-red);
+  background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reminder {
+  font-style: italic;
+}
+
+.home-link {
+  color: var(--snow-white);
+  font-weight: 500;
+}
+
+.home-link:hover {
+  color: var(--christmas-gold);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .name-form {
+    flex-direction: column;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+
+  .link-section {
+    flex-direction: column;
+  }
+
+  .copy-button {
+    width: 100%;
+  }
+
+  .receiver-name {
+    font-size: 1.5em;
+  }
+}

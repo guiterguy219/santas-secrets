@@ -1,0 +1,90 @@
+:root {
+  font-family: 'Segoe UI', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  --christmas-red: #c41e3a;
+  --christmas-red-dark: #8b0000;
+  --christmas-green: #228b22;
+  --christmas-green-dark: #006400;
+  --christmas-gold: #ffd700;
+  --snow-white: #fffafa;
+  --card-bg: #ffffff;
+  --text-dark: #1a1a2e;
+  --text-light: #4a4a4a;
+
+  color: var(--text-dark);
+  background: linear-gradient(135deg, #1a472a 0%, #2d5a27 50%, #1a472a 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0 0 1rem 0;
+}
+
+a {
+  color: var(--christmas-red);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--christmas-red-dark);
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input {
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  padding: 0.75em 1em;
+  font-size: 1em;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--christmas-green);
+}
